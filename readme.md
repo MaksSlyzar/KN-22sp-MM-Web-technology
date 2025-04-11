@@ -17,6 +17,8 @@
 | 5 | Лабораторна робота №5 | [▶ Відкрити](https://rawcdn.githack.com/MaksSlyzar/KN-22sp-MM-Web-technology/main/lab5/index.html) |
 | 6 | Лабораторна робота №6 | [▶ Відкрити](https://rawcdn.githack.com/MaksSlyzar/KN-22sp-MM-Web-technology/main/lab6/index.html) |
 | 7 | Лабораторна робота №7 | [▶ Відкрити](https://rawcdn.githack.com/MaksSlyzar/KN-22sp-MM-Web-technology/main/lab7/index.html) |
+| 8 | Лабораторна робота №7 | [▶ Відкрити](https://rawcdn.githack.com/MaksSlyzar/KN-22sp-MM-Web-technology/main/lab8/index.html) |
+| 9 | Лабораторна робота №7 | [▶ Відкрити](https://rawcdn.githack.com/MaksSlyzar/KN-22sp-MM-Web-technology/main/lab9/index.html) |
 
 > 🔸 Всі лабораторні завдання відкриваються через [githack.com](https://githack.com) для перегляду HTML-сторінок напряму з GitHub.
 
