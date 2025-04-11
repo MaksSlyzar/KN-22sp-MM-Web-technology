@@ -1,0 +1,83 @@
+/*Завдання 1*/
+.button {
+  background-color: aqua;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.1s;
+  color: gray;
+}
+
+.button:hover {
+  color: white;
+  background-color: #45a049;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/*Завдання 2*/
+.container {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 16px;
+  background-color: #f5f5f5;
+}
+
+.container:hover .content {
+  max-height: 200px;
+  padding: 16px;
+}
+
+
+/*Завдання 3*/
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50;
+  position: relative;
+  animation: moveLeftRight 2s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+/*Індивідуальне завдання*/
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+@keyframes move {
+  0% { left: 0; top: 0; }
+  25% { left: 100px; top: 0; }
+  50% { left: 100px; top: 100px; }
+  75% { left: 0; top: 100px; }
+  100% { left: 0; top: 0; }
+}
+
+.animate {
+  animation: move 1.8s infinite;
+}
+
