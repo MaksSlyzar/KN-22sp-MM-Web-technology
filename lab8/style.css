@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #8a2be2; 
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1em;
+}
+
+button {
+  background-color: #8a2be2; 
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #7a1ad1; 
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input[type="text"], button {
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+}
+
+input[type="text"] {
+  background-color: #f0f0f5;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #8a2be2; 
+  background-color: #e6e6f5;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.container button {
+  margin-top: 20px;
+  background-color: #8a2be2;
+}
+
+.container button:disabled {
+  background-color: #d1c7e0; 
+  cursor: not-allowed;
+}
+

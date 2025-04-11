@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Список справ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Список справ</h1>
+    <button id="refreshBtn">Оновити</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Назва</th>
+          <th>Завершено</th>
+        </tr>
+      </thead>
+      <tbody id="todoTableBody">
+        <!-- Дані з API -->
+      </tbody>
+    </table>
+
+    <h2>Добавити нову справу</h2>
+    <form id="todoForm">
+      <input type="text" id="newTitle" placeholder="Назва справи" required />
+      <label>
+        <input type="checkbox" id="newCompleted" />
+        Завершено
+      </label>
+      <button type="submit">Добавити</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
