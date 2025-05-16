@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #121212; /* темний фон */
-  color: #e0e0e0; /* світлий текст */
+  background: #121212;
+  color: #e0e0e0;
 }
 
 header {
-  background: #0d47a1; /* темно-синій */
+  background: #0d47a1; 
   color: white;
   text-align: center;
   padding: 1.5em 0;
@@ -24,13 +24,13 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #64b5f6; /* світло-синій */
+  color: #64b5f6;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #bbdefb; /* ще світліший синій при наведенні */
+  color: #bbdefb; 
 }
 
 main {
@@ -42,7 +42,7 @@ section {
 }
 
 section h2 {
-  color: #90caf9; /* заголовки секцій — синюваті */
+  color: #90caf9; 
 }
 
 form {
@@ -68,7 +68,7 @@ input:focus, textarea:focus {
 }
 
 button {
-  background: #2196f3; /* яскраво-синій */
+  background: #2196f3; 
   color: white;
   border: none;
   padding: 0.8em;
@@ -79,7 +79,7 @@ button {
 }
 
 button:hover {
-  background: #1976d2; /* темніший синій */
+  background: #1976d2; 
 }
 
 footer {
@@ -116,7 +116,6 @@ footer {
   text-align: justify;
 }
 
-/* Секція Skills */
 #skills {
   background-color: #1a1a1d;
   color: #e0e0e0;
@@ -170,7 +169,6 @@ footer {
   box-shadow: 0 0 10px #64b5f6;
 }
 
-/* Секція Projects */
 #projects {
   background-color: #1a1a1d;
   color: #e0e0e0;
@@ -228,7 +226,6 @@ footer {
   color: #cfd8dc;
 }
 
-/* Для більших екранів — горизонтальна розкладка */
 @media (min-width: 768px) {
   .project {
     flex-direction: row;
@@ -247,7 +244,6 @@ footer {
   }
 }
 
-/* Секція Contacts */
 #contacts {
   background-color: #2c2f33;
   padding: 2em;
@@ -316,7 +312,6 @@ form button:hover {
   background-color: #42a5f5;
 }
 
-/* Загальні блоки для секцій */
 .section-block {
   background-color: #2c2f33;
   border-left: 5px solid #64b5f6;
