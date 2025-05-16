@@ -1,0 +1,333 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212; /* темний фон */
+  color: #e0e0e0; /* світлий текст */
+}
+
+header {
+  background: #0d47a1; /* темно-синій */
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  text-decoration: none;
+  color: #64b5f6; /* світло-синій */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #bbdefb; /* ще світліший синій при наведенні */
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 2.5em;
+}
+
+section h2 {
+  color: #90caf9; /* заголовки секцій — синюваті */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 0.7em;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1em;
+  transition: border 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+button {
+  background: #2196f3; /* яскраво-синій */
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1976d2; /* темніший синій */
+}
+
+footer {
+  text-align: center;
+  background: #0d0d0d;
+  color: #999;
+  padding: 1em 0;
+  border-top: 1px solid #222;
+}
+
+/* Секція About */
+#about {
+  background-color: #1a1a1d;
+  color: #e0e0e0;
+  padding: 3em 2em;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 0 auto 3em auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #90caf9;
+  margin-bottom: 1em;
+}
+
+#about p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+  color: #cfd8dc;
+  text-align: justify;
+}
+
+/* Секція Skills */
+#skills {
+  background-color: #1a1a1d;
+  color: #e0e0e0;
+  padding: 3em 2em;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 0 auto 3em auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #90caf9;
+  margin-bottom: 1em;
+}
+
+#skills h3 {
+  font-size: 1.3em;
+  color: #64b5f6;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-left: 4px solid #64b5f6;
+  padding-left: 0.5em;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5em;
+}
+
+#skills li {
+  background-color: #2c2f33;
+  padding: 0.7em 1em;
+  margin: 0.2em 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #cfd8dc;
+  cursor: default;
+}
+
+#skills li:hover {
+  background-color: #3c4045;
+  color: #ffffff;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #64b5f6;
+}
+
+/* Секція Projects */
+#projects {
+  background-color: #1a1a1d;
+  color: #e0e0e0;
+  padding: 3em 2em;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 0 auto 3em auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #90caf9;
+  margin-bottom: 1.5em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2f33;
+  border-left: 5px solid #64b5f6;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #64b5f6;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.project img:hover {
+  opacity: 0.9;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  color: #64b5f6;
+}
+
+.project-content p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #cfd8dc;
+}
+
+/* Для більших екранів — горизонтальна розкладка */
+@media (min-width: 768px) {
+  .project {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2em;
+  }
+
+  .project img {
+    width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .project-content {
+    flex: 1;
+  }
+}
+
+/* Секція Contacts */
+#contacts {
+  background-color: #2c2f33;
+  padding: 2em;
+  border-left: 5px solid #64b5f6;
+  border-radius: 8px;
+  max-width: 980px;
+  margin: 3em auto 3em auto;
+}
+
+#contacts h2 {
+  color: #64b5f6;
+  margin-bottom: 1em;
+}
+
+#contacts p {
+  color: #cfd8dc;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.contact-block p {
+  color: #cfd8dc;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.4em;
+  color: #cfd8dc;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1.2em;
+  border: none;
+  border-radius: 6px;
+  background-color: #3a3f47;
+  color: #ffffff;
+  font-size: 1em;
+  transition: border 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 2px solid #64b5f6;
+}
+
+form button {
+  background-color: #64b5f6;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #42a5f5;
+}
+
+/* Загальні блоки для секцій */
+.section-block {
+  background-color: #2c2f33;
+  border-left: 5px solid #64b5f6;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.section-block:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 10px #64b5f6;
+}
+

@@ -8,7 +8,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   const password = document.getElementById('password').value;
   const confirmPassword = document.getElementById('confirmPassword').value;
   const age = document.getElementById('age').value;
+<<<<<<< HEAD
   const gender = document.querySelector('input[name="gender"]:checked');
+=======
+>>>>>>> db0b20f (push labs)
   const group = document.getElementById('group').value;
 
   if (!name) {
