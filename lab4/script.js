@@ -1,26 +1,22 @@
-function hello() {
-  const username = prompt("Введіть своє ім'я");
-  alert(`Привіт ${username}! Радий тебе бачити`);
-}
+const username = prompt("Як вас звати?");
 
-function calculateAge() {
-  const birthYear = parseInt(prompt("Введіть рік народження:"));
-  const currentYear = new Date().getFullYear();
+alert(`Привіт, ${username}! Радий тебе бачити!`);
 
-  if (!isNaN(birthYear) && birthYear > 1900 && birthYear <= currentYear) {
-    const age = currentYear - birthYear;
-    alert(`Ваш вік: ${age} років`);
-  } else {
-    alert("Будь ласка, введіть коректний рік народження.");
-  }
-}
+const firstNumber = prompt("Введіть число:");
+const secondNumber = prompt("Введіть наступне число:");
 
-function numbers() {
-  const firstNumber = Number(prompt("Enter first number:"));
-  const secondNumber = Number(prompt("Enter second number:"));
+const result = `Добуток ${firstNumber * secondNumber}\nЧастка ${firstNumber / secondNumber}`;
 
-  alert(`Добуток: ${firstNumber * secondNumber}\nЧастка:${firstNumber / secondNumber}`);
-  console.log(firstNumber * secondNumber);
-}
+alert(result);
+console.log(result);
 
-calculateAge();
+const userYear = prompt("Ваш рік народження:");
+const userAge = Math.abs(userYear - new Date().getFullYear());
+const staticAge = 20;
+
+const ageDiff = Math.abs(userAge - staticAge);
+
+if (userAge < staticAge)
+  alert(`Ваш вік ${userAge}.\nВи молодше від мене на ${ageDiff} років.`);
+else
+  alert(`Ваш вік ${userAge}.\nВи старше від мене на ${ageDiff} років.`);
